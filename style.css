@@ -1,0 +1,118 @@
+/* Кастомные шрифты */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Общие стили */
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Стили для header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
+  /* Стили для main sections */
+  .hero, .about, .services, .testimonials, .contact {
+    padding: 2rem;
+  }
+
+  .cta, .link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta:hover, .link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Стили для карусели */
+  .swiper-container {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #007bff;
+  }
+  
+  /* Адаптивные стили */
+  @media (max-width: 767px) {
+    /* Стили для мобильных устройств */
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero, .about, .services, .testimonials, .contact {
+      padding: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+    /* Стили для планшетов */
+    nav ul {
+      justify-content: space-around;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* Стили для десктопов */
+    nav ul {
+      justify-content: flex-end;
+    }
+  }
+    
